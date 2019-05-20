@@ -4,10 +4,10 @@ import styles from "./styles";
 
 const Logo = () => (
 		<View style={styles.container}>
-			<ImageBackground style={styles.containerImage} source={require('./images/background.png')}>
-					<Image style={styles.image}  source={require("./images/logo.png")}/>  
+			<ImageBackground resizeMode="contain" style={styles.containerImage} source={require('./images/background.png')}>
+					<Image resizeMode="contain"  style={styles.image}  source={require("./images/logo.png")}/>  
 			</ImageBackground>
-			<Text styles={styles.text}>Convert the shit out of it</Text>
+			<Text style={styles.text}>Convert IT</Text>
 		</View>
 	)
 

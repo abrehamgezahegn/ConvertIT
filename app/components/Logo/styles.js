@@ -14,7 +14,16 @@ export default EStyleSheet.create({
 		width: imageWidth,
 		height: imageWidth
 	},
+	image: {
+		width: imageWidth / 2,
+		height: imageWidth / 2
+	},
 	text: {
-		color: "white"
+		color: "$white",
+		marginTop: 30,
+		fontWeight: '700',
+		fontSize: 24 ,
+		letterSpacing: 0.5
+
 	}
 })

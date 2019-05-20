@@ -7,7 +7,8 @@ EStyleSheet.build({
 	$darkGrey: '#1F2833',
 	$lightGrey: "#C5c6c7",
 	$electricBlue: "#66fcf1",
-	$electricBlueD: "#45a29e"
+	$electricBlueD: "#45a29e",
+	$white: "#fff"
 })
 
 
