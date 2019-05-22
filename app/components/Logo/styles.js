@@ -1,9 +1,15 @@
 import {Dimensions} from "react-native";
 import EStyleSheet from "react-native-extended-stylesheet";
 
-let imageWidth = Dimensions.get("window").width / 2;
+let imageSize = Dimensions.get("window").width / 2;
 
 export default EStyleSheet.create({
+	
+	$largeContainerSize : imageSize,
+	$largeImageSize :imageSize / 2,
+	$smallContainerSize : imageSize / 2,
+	$smallImageSize : imageSize / 4,
+
 	container: {
 		alignItems: "center",
 		justifyContent:"center"
@@ -11,12 +17,12 @@ export default EStyleSheet.create({
 	containerImage: {
 		justifyContent:"center",
 		alignItems: "center",
-		width: imageWidth,
-		height: imageWidth
+		width: '$largeContainerSize',
+		height: '$largeContainerSize'
 	},
 	image: {
-		width: imageWidth / 2,
-		height: imageWidth / 2
+		width: '$largeImageSize',
+		height: '$largeImageSize'
 	},
 	text: {
 		color: "$white",
